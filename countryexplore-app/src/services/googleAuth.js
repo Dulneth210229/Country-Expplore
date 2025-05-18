@@ -1,8 +1,9 @@
-// Google Authentication Service
+﻿// Google Authentication Service
 // This file provides authentication services using Google Identity Services directly
 
 // Your Google Client ID from Google Cloud Console
-const CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID";
+const CLIENT_ID =
+  "718676032236-l88224q9rhfjv67b1blnoimn3ft98tso.apps.googleusercontent.com";
 
 // Auth state change listeners
 let authChangeListeners = [];
