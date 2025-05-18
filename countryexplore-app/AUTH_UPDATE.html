@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication Update Notice</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .container {
+        background-color: #f9f9f9;
+        border-left: 4px solid #2196f3;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+      h1 {
+        color: #2196f3;
+      }
+      code {
+        background-color: #f1f1f1;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: Consolas, Monaco, "Andale Mono", monospace;
+      }
+      .highlight {
+        background-color: #e3f2fd;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Authentication Implementation Update</h1>
+
+    <div class="container">
+      <h2>Important Notice</h2>
+      <p>
+        This project has been updated to use
+        <strong>Google Identity Services</strong> directly for authentication,
+        instead of using Firebase Authentication.
+      </p>
+    </div>
+
+    <h3>What Changed?</h3>
+    <ul>
+      <li>Removed Firebase dependencies</li>
+      <li>Implemented direct integration with Google Identity Services</li>
+      <li>Simplified authentication flow</li>
+      <li>Reduced bundle size</li>
+    </ul>
+
+    <h3>Files Affected</h3>
+    <ul>
+      <li>
+        <code>src/services/firebase.js</code> - Commented out, no longer used
+      </li>
+      <li>
+        <code>src/services/googleAuth.js</code> - New file for direct Google
+        Authentication
+      </li>
+      <li>
+        <code>src/context/AuthContext.js</code> - Updated to use googleAuth
+        instead of Firebase
+      </li>
+      <li><code>package.json</code> - Removed Firebase dependency</li>
+    </ul>
+
+    <h3>How to Configure Authentication</h3>
+    <p>
+      Please refer to
+      <a href="GOOGLE_AUTH_SETUP.md">GOOGLE_AUTH_SETUP.md</a> for detailed
+      instructions on setting up Google Authentication.
+    </p>
+
+    <h3>Quick Setup</h3>
+    <p>Run the following command to set up your Google Authentication:</p>
+    <pre><code>npm run setup-auth</code></pre>
+    <p>Or:</p>
+    <pre><code>.\setup-google-auth.ps1</code></pre>
+
+    <hr />
+    <p><em>Last updated: May 18, 2025</em></p>
+  </body>
+</html>
